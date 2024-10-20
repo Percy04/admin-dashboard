@@ -1,0 +1,283 @@
+img {
+    width: 23px;
+    height: auto;
+    padding: 0 1rem 0 0;
+}
+
+html {
+    font-family: 'Roboto', sans-serif;
+}
+
+.search-items {
+    display: flex;
+}
+
+/* button styling */
+button {
+  align-items: center;
+  appearance: none;
+  background-color: #3EB2FD;
+  background-image: linear-gradient(1deg, #4F58FD, #149BF3 99%);
+  background-size: calc(100% + 20px) calc(100% + 20px);
+  border-radius: 100px;
+  border-width: 0;
+  box-shadow: none;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: CircularStd,sans-serif;
+  font-size: 1rem;
+  height: auto;
+  justify-content: center;
+  line-height: 1.5;
+  padding: 6px 20px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color .2s,background-position .2s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: top;
+  white-space: nowrap;
+  margin-left: 2rem;
+  width: 6rem;
+}
+
+button:active,
+button:focus {
+  outline: none;
+}
+
+button:hover {
+  background-position: -20px -20px;
+}
+
+button:focus:not(:active) {
+  box-shadow: rgba(40, 170, 255, 0.25) 0 0 0 .125em;
+}
+
+
+input[type="text"] {
+    width: 40rem;
+}
+
+h2, h3, h4 {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+}
+
+.dashboard {
+    grid-column: 1/2;
+    grid-row: 1/-3;
+    background-color: #34d399;
+    color: white;
+}
+
+.dashboard > h2 {
+    padding: 0 1rem 0 1.5rem;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.dashboard > h2 > img {
+    width: 40px;
+    height: auto;
+}
+
+
+.features > *, .web-settings > * {
+    padding: 0.5rem 1rem 0.5rem 2rem;
+    font-size: large;
+}
+
+.features {
+    margin-bottom: 4rem;
+    padding-top: 2rem;
+}
+
+/* header */
+/* figuring out search and the whole profile thing */
+.search-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 4rem 0rem 3rem; 
+}
+
+.profile > h3  {
+    display: flex;
+    gap: 1.3rem;
+}
+
+.profile-pic {
+    width: 2.5rem;
+}
+
+.intro {
+    display: flex;
+    /* outline: solid; */
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0rem 3rem 0rem 3rem; 
+    /* outline: solid; */
+}
+
+
+/* content */
+.content {
+    display: grid;
+    grid-template-columns: 1.2fr 1.2fr 1fr;
+}
+
+.projects {
+    grid-column: 1/3;
+    padding: 1rem 1rem 2rem 1rem;
+}
+
+body {
+    height: 100vh;
+}
+
+
+h3,h4 {
+    margin: 0;
+    padding: 0;
+}
+
+.all-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    height: 100%;
+    box-sizing: border-box; 
+    padding-bottom: 1rem;
+}
+
+
+.card {
+    background-color: white;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    box-shadow: 3px 3px 8px rgb(172, 174, 172);
+} 
+
+.announcement {
+    grid-column: 3/4;
+    padding: 1rem;
+}
+
+.announcement-all-card {
+    background-color: white;
+    padding: 1rem;
+    box-shadow: 3px 3px 8px rgb(172, 174, 172);
+}
+
+.sidebar {
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: column;
+    padding-right: 1rem;
+}
+
+.trending { 
+    grid-column: 3/4;
+    box-sizing: border-box;
+    padding: 0rem 1rem 0rem 1rem;
+}
+
+.container {
+    height: 100%;
+}
+
+.trending-all-card {
+    background-color: white;
+    box-shadow: 3px 3px 8px rgb(172, 174, 172);
+}
+
+.trending-card {
+    display: flex;
+    padding: 0.5rem;
+}
+
+
+input[type="text"] {
+    border-radius: 1rem;
+    border: none;
+    outline: none;
+    background-color: #E8E8E8;
+    padding: 0.5rem;
+}
+
+
+.intro > img {
+    width: 4rem;
+}
+
+.content {
+    /* background-color: #bbf7d0; */
+    background-color: rgb(187, 247, 208, 1);
+    
+}
+
+.all-cards, .announcement-all-card, trending {
+    margin-top: 0.5rem;
+}
+
+.card {
+    border-radius: 1rem;
+    padding: 7%;
+}
+
+.announcement-all-card {
+    border-radius: 1rem;
+}
+
+.announcement-card {
+    padding: 0.3rem;
+}
+
+.card-text {
+    font-size: 0.8rem;
+    opacity: 0.6;
+}
+
+.announcement-card .card-text {
+    font-size: 0.7rem;
+}
+
+.trending-all-card {
+    border-radius: 1rem;
+    /* padding-top: 0.5rem; */
+    margin-top: 0.5rem;
+    /* margin-bottom: 0.5rem; */
+    padding-left: 1rem;
+}
+
+.trending-card > img {
+    width: 2rem;
+    height: auto;
+}
+
+.announcement-card > h4 {
+    font-size: 0.8rem;
+}
